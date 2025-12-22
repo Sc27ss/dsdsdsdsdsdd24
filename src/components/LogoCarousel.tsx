@@ -60,7 +60,7 @@ const LogoCarousel = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div ref={trackRef} className="flex items-center whitespace-nowrap will-change-transform">
+        <div ref={trackRef} className="flex items-center whitespace-nowrap will-change-transform overflow-hidden">
           {displayBrands.map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}

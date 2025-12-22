@@ -56,7 +56,7 @@ const PageTransition = ({
 export function App() {
   return <Router>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen font-sans bg-white text-zinc-900">
+      <div className="flex flex-col min-h-screen font-sans bg-white text-zinc-900 overflow-x-hidden">
         <Navigation />
 
         <main className="flex-grow">
