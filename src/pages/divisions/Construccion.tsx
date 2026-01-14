@@ -4,6 +4,7 @@ import { Hammer, CheckCircle2, ArrowRight } from 'lucide-react';
 import { ProductCard } from '../../components/ProductCard';
 import { Button } from '../../components/ui/Button';
 import { getProductsByDivision } from '../../data/products';
+import { DivisionVideo } from '../../components/DivisionVideo';
 export function Construccion() {
   const products = getProductsByDivision('/soluciones/construccion');
   const containerVariants = {
@@ -34,19 +35,21 @@ export function Construccion() {
             <div className="inline-flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full px-4 py-2 mb-6">
               <Hammer className="h-4 w-4 text-yellow-400" />
               <span className="text-sm font-medium text-yellow-400">
-                DIVISIÓN ESPECIALIZADA
+                DIVISIÓN: SOLUCIONES CONSTRUCCIÓN
               </span>
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
-                Construcción
+                SOLUCIONES CONSTRUCCIÓN
               </span>
             </h1>
 
             <p className="text-xl text-slate-400 max-w-3xl leading-relaxed mb-8">
-              Equipos y maquinaria para el sector de la construcción y obras
-              civiles. Calidad y respaldo para sus proyectos.
+              Proveemos equipos, repuestos y servicios integrales para obras
+              civiles, infraestructura y proyectos de ingeniería. Nuestra oferta
+              combina calidad, disponibilidad y soporte técnico especializado para
+              garantizar plazos y productividad en obra.
             </p>
 
             <Button size="lg" className="bg-yellow-600 hover:bg-yellow-500" onClick={() => window.location.href = '#catalogo'}>
@@ -112,6 +115,8 @@ export function Construccion() {
         </div>
       </section>
 
+      <DivisionVideo videoName="SOLUCIONES-CONSTRUCCIÓN" />
+
       <section id="catalogo" className="py-20 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{
@@ -127,7 +132,7 @@ export function Construccion() {
               EQUIPOS Y HERRAMIENTAS
             </span>
             <h2 className="text-4xl font-bold text-white mb-4">
-              Catálogo de <span className="text-yellow-400">Construcción</span>
+              Catálogo <span className="text-yellow-400">Construcción</span>
             </h2>
             <div className="w-20 h-1 bg-yellow-500 mx-auto mt-6"></div>
           </motion.div>
@@ -135,7 +140,7 @@ export function Construccion() {
           <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true
         }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} />)}
+            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} image={product.image} />)}
           </motion.div>
 
           <motion.div initial={{

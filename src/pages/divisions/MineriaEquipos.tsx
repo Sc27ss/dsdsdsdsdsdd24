@@ -5,7 +5,7 @@ import { ProductCard } from '../../components/ProductCard';
 import { Button } from '../../components/ui/Button';
 import { getProductsByDivision } from '../../data/products';
 export function MineriaEquipos() {
-  const products = getProductsByDivision('/soluciones/mineria-equipos');
+  const products = getProductsByDivision('/soluciones/agroindustriales');
   const containerVariants = {
     hidden: {
       opacity: 0
@@ -137,7 +137,7 @@ export function MineriaEquipos() {
           <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true
         }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} />)}
+            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} image={product.image} />)}
           </motion.div>
 
           <motion.div initial={{

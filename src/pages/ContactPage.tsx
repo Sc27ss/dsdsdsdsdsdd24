@@ -1,6 +1,6 @@
 import React, { useState, lazy } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Smartphone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 export function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -108,14 +108,11 @@ export function ContactPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <Phone className="h-6 w-6 text-blue-400 mt-1 mr-4 flex-shrink-0" />
+                    <Smartphone className="h-6 w-6 text-blue-400 mt-1 mr-4 flex-shrink-0" />
                     <div>
-                      <p className="font-bold text-white">Teléfonos</p>
-                      <a href="tel:+576042389198" className="text-slate-400 hover:text-blue-400 transition-colors block">
-                        Fijo: (604) 238 91 98
-                      </a>
+                      <p className="font-bold text-white">Celular (WhatsApp)</p>
                       <a href="https://wa.me/573207702522" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors block">
-                        Cel: 320 770 2522
+                        320 770 2522
                       </a>
                     </div>
                   </div>
@@ -124,8 +121,8 @@ export function ContactPage() {
                     <Mail className="h-6 w-6 text-blue-400 mt-1 mr-4 flex-shrink-0" />
                     <div>
                       <p className="font-bold text-white">Email</p>
-                      <a href="mailto:Soluciones_ind@une.net.co" className="text-slate-400 hover:text-blue-400 transition-colors">
-                        Soluciones_ind@une.net.co
+                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Solusas.ind@gmail.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors">
+                        Solusas.ind@gmail.com
                       </a>
                     </div>
                   </div>

@@ -5,65 +5,41 @@ import { Settings, Droplets, Hammer, HardHat, Shield, Zap, Gauge, Fuel, Disc, Ch
 import { Button } from '../components/ui/Button';
 export function SolutionsPage() {
   const divisions = [{
-    id: 'transmision-potencia',
-    name: 'Transmisión de Potencia',
-    description: 'Motorreductores y acoples',
-    icon: <Settings className="h-8 w-8" />,
-    path: '/soluciones/transmision-potencia'
-  }, {
-    id: 'bombas-industriales',
-    name: 'Bombas y Fluidos',
-    description: 'Manejo de líquidos, bombas centrífugas, sumergibles y sellos mecánicos',
-    icon: <Droplets className="h-8 w-8" />,
-    path: '/soluciones/bombas-industriales'
-  }, {
-    id: 'fabricacion-poleas',
-    name: 'Fabricación de Poleas',
-    description: 'Diseño y fabricación de poleas industriales',
-    icon: <Disc className="h-8 w-8" />,
-    path: '/soluciones/fabricacion-poleas'
-  }, {
-    id: 'mineria-equipos',
-    name: 'Minería y Agregados',
-    description: 'Trituración, cribado, elementos de desgaste y maquinaria amarilla',
-    icon: <HardHat className="h-8 w-8" />,
-    path: '/soluciones/mineria-equipos'
-  }, {
     id: 'construccion',
     name: 'Construcción',
-    description: 'Maquinaria ligera y pesada para obras civiles',
+    description: 'Soluciones integrales para obras civiles y proyectos de infraestructura',
     icon: <Hammer className="h-8 w-8" />,
     path: '/soluciones/construccion'
   }, {
-    id: 'seguridad-industrial',
-    name: 'Seguridad Industrial',
-    description: 'EPP y equipos de protección personal',
-    icon: <Shield className="h-8 w-8" />,
-    path: '/soluciones/seguridad-industrial'
+    id: 'manejo-de-fluidos',
+    name: 'Manejo de Fluidos',
+    description: 'Sistemas completos para control, transporte y tratamiento de fluidos',
+    icon: <Droplets className="h-8 w-8" />,
+    path: '/soluciones/manejo-de-fluidos'
   }, {
-    id: 'energia-motores',
-    name: 'Energía y Motores',
-    description: 'Motores eléctricos y generadores',
+    id: 'agroindustriales',
+    name: 'Agroindustriales',
+    description: 'Equipos y soluciones diseñadas para la agroindustria moderna',
+    icon: <HardHat className="h-8 w-8" />,
+    path: '/soluciones/agroindustriales'
+  }, {
+    id: 'motores',
+    name: 'Motores',
+    description: 'Equipos y sistemas de motores para aplicaciones industriales y móviles',
     icon: <Zap className="h-8 w-8" />,
-    path: '/soluciones/energia-motores'
+    path: '/soluciones/motores'
   }, {
-    id: 'instrumentacion-valvulas',
-    name: 'Instrumentación y Válvulas',
-    description: 'Control de procesos y válvulas industriales',
-    icon: <Gauge className="h-8 w-8" />,
-    path: '/soluciones/instrumentacion-valvulas'
+    id: 'tras-potencia',
+    name: 'Transmisión de Potencia',
+    description: 'Componentes y sistemas para transmisión de potencia industrial',
+    icon: <Settings className="h-8 w-8" />,
+    path: '/soluciones/tras-potencia'
   }, {
-    id: 'lubricacion-combustibles',
-    name: 'Lubricación y Combustibles',
-    description: 'Sistemas de lubricación centralizada',
-    icon: <Fuel className="h-8 w-8" />,
-    path: '/soluciones/lubricacion-combustibles'
-  }, {
-    id: 'equipos-complementarios',
-    name: 'Equipos Complementarios',
-    description: 'Compresores, sistemas hidroneumáticos y equipos de jardinería',
-    icon: <Wrench className="h-8 w-8" />,
-    path: '/soluciones/equipos-complementarios'
+    id: 'filtracion-fluidos',
+    name: 'Filtración de Fluidos',
+    description: 'Soluciones de filtración y separación para procesos industriales',
+    icon: <Droplets className="h-8 w-8" />,
+    path: '/soluciones/filtracion-fluidos'
   }];
   const containerVariants = {
     hidden: {

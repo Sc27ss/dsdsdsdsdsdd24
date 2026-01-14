@@ -1,0 +1,8 @@
+# robots.txt for Soluciones Industriales project
+# Allows full crawling. Replace {YOUR_DOMAIN} in sitemap line when assigning a real domain.
+
+User-agent: *
+Allow: /
+
+# Sitemap location (replace with your real domain when available)
+Sitemap: https://{YOUR_DOMAIN}/sitemap.xml

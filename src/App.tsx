@@ -13,17 +13,14 @@ import { SectorsPage } from './pages/SectorsPage';
 import { TeamPage } from './pages/TeamPage';
 import { ContactPage } from './pages/ContactPage';
 import { SolutionsPage } from './pages/SolutionsPage';
-// Division Pages
-import { TransmisionPotencia } from './pages/divisions/TransmisionPotencia';
-import { BombasIndustriales } from './pages/divisions/BombasIndustriales';
-import { FabricacionPoleas } from './pages/divisions/FabricacionPoleas';
-import { MineriaEquipos } from './pages/divisions/MineriaEquipos';
+// Division Pages (restructured)
 import { Construccion } from './pages/divisions/Construccion';
-import { SeguridadIndustrial } from './pages/divisions/SeguridadIndustrial';
-import { EnergiaMotores } from './pages/divisions/EnergiaMotores';
-import { InstrumentacionValvulas } from './pages/divisions/InstrumentacionValvulas';
-import { LubricacionCombustibles } from './pages/divisions/LubricacionCombustibles';
-import { EquiposComplementarios } from './pages/divisions/EquiposComplementarios';
+import { ManejoDeFluidos } from './pages/divisions/ManejoDeFluidos';
+import { Agroindustriales } from './pages/divisions/Agroindustriales';
+import { TrasPotencia } from './pages/divisions/TrasPotencia';
+import { FiltracionFluidos } from './pages/divisions/FiltracionFluidos';
+import { Motores } from './pages/divisions/Motores';
+
 // Scroll to top on route change
 function ScrollToTop() {
   const {
@@ -87,35 +84,23 @@ export function App() {
                   </PageTransition>} />
 
               {/* Division Pages */}
-              <Route path="/soluciones/transmision-potencia" element={<PageTransition>
-                    <TransmisionPotencia />
-                  </PageTransition>} />
-              <Route path="/soluciones/bombas-industriales" element={<PageTransition>
-                    <BombasIndustriales />
-                  </PageTransition>} />
-              <Route path="/soluciones/fabricacion-poleas" element={<PageTransition>
-                    <FabricacionPoleas />
-                  </PageTransition>} />
-              <Route path="/soluciones/mineria-equipos" element={<PageTransition>
-                    <MineriaEquipos />
-                  </PageTransition>} />
               <Route path="/soluciones/construccion" element={<PageTransition>
                     <Construccion />
                   </PageTransition>} />
-              <Route path="/soluciones/seguridad-industrial" element={<PageTransition>
-                    <SeguridadIndustrial />
+              <Route path="/soluciones/manejo-de-fluidos" element={<PageTransition>
+                    <ManejoDeFluidos />
                   </PageTransition>} />
-              <Route path="/soluciones/energia-motores" element={<PageTransition>
-                    <EnergiaMotores />
+              <Route path="/soluciones/agroindustriales" element={<PageTransition>
+                    <Agroindustriales />
                   </PageTransition>} />
-              <Route path="/soluciones/instrumentacion-valvulas" element={<PageTransition>
-                    <InstrumentacionValvulas />
+              <Route path="/soluciones/tras-potencia" element={<PageTransition>
+                    <TrasPotencia />
                   </PageTransition>} />
-              <Route path="/soluciones/lubricacion-combustibles" element={<PageTransition>
-                    <LubricacionCombustibles />
+              <Route path="/soluciones/filtracion-fluidos" element={<PageTransition>
+                    <FiltracionFluidos />
                   </PageTransition>} />
-              <Route path="/soluciones/equipos-complementarios" element={<PageTransition>
-                    <EquiposComplementarios />
+              <Route path="/soluciones/motores" element={<PageTransition>
+                    <Motores />
                   </PageTransition>} />
             </Routes>
           </AnimatePresence>

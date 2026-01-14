@@ -4,6 +4,7 @@ import { Zap, CheckCircle2, ArrowRight } from 'lucide-react';
 import { ProductCard } from '../../components/ProductCard';
 import { Button } from '../../components/ui/Button';
 import { getProductsByDivision } from '../../data/products';
+import { DivisionVideo } from '../../components/DivisionVideo';
 export function EnergiaMotores() {
   const products = getProductsByDivision('/soluciones/energia-motores');
   const containerVariants = {
@@ -113,6 +114,8 @@ export function EnergiaMotores() {
         </div>
       </section>
 
+      <DivisionVideo videoName="energiamotores" />
+
       <section id="catalogo" className="py-20 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{
@@ -136,7 +139,7 @@ export function EnergiaMotores() {
           <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true
         }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} />)}
+            {products.map((product, index) => <ProductCard key={product.id} index={index} name={product.name} description={product.description} category={product.category} image={product.image} />)}
           </motion.div>
 
           <motion.div initial={{

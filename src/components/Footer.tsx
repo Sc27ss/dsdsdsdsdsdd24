@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Smartphone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { PrivacyModal } from './PrivacyModal';
 import { TermsModal } from './TermsModal';
 import logo from '../assets/logos/logo.png';
@@ -117,28 +117,33 @@ export function Footer() {
               <h3 className="text-white font-bold text-lg mb-6">Soluciones</h3>
               <ul className="space-y-3 text-sm">
                 <li>
-                  <Link to="/soluciones/transmision-potencia" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
-                    Transmisión de Potencia
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/soluciones/bombas-industriales" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
-                    Bombas Industriales
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/soluciones/mineria-equipos" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
-                    Minería y Equipos
-                  </Link>
-                </li>
-                <li>
                   <Link to="/soluciones/construccion" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
                     Construcción
                   </Link>
                 </li>
                 <li>
-                  <Link to="/soluciones/seguridad-industrial" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
-                    Seguridad Industrial
+                  <Link to="/soluciones/manejo-de-fluidos" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
+                    Manejo de Fluidos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/soluciones/agroindustriales" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
+                    Agroindustriales
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/soluciones/tras-potencia" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
+                    Transmisión de Potencia
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/soluciones/filtracion-fluidos" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
+                    Filtración de Fluidos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/soluciones/motores" className="hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block duration-300">
+                    Motores
                   </Link>
                 </li>
               </ul>
@@ -157,21 +162,15 @@ export function Footer() {
                   </span>
                 </li>
                 <li className="flex items-center group">
-                  <Phone className="h-5 w-5 mr-3 text-cyan-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <a href="tel:+576042389198" className="hover:text-cyan-400 transition-colors">
-                    (604) 238 91 98
-                  </a>
-                </li>
-                <li className="flex items-center group">
-                  <Phone className="h-5 w-5 mr-3 text-cyan-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <Smartphone className="h-5 w-5 mr-3 text-cyan-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <a href="https://wa.me/573207702522" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
-                    320 770 2522
+                    Cel. 320 770 2522
                   </a>
                 </li>
                 <li className="flex items-center group">
                   <Mail className="h-5 w-5 mr-3 text-cyan-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <a href="mailto:Soluciones_ind@une.net.co" className="hover:text-cyan-400 transition-colors break-all">
-                    Soluciones_ind@une.net.co
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Solusas.ind@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors break-all">
+                    Solusas.ind@gmail.com
                   </a>
                 </li>
               </ul>

@@ -1,6 +1,6 @@
 import React, { Children, Component } from 'react';
 import { motion } from 'framer-motion';
-import { Factory, HardHat, Zap, Tractor, Building2, Truck } from 'lucide-react';
+import { Factory, HardHat, Zap, Tractor, Building2, Truck, Utensils } from 'lucide-react';
 export function SectorsPage() {
   const sectors = [{
     title: 'Industria Manufacturera',
@@ -22,6 +22,11 @@ export function SectorsPage() {
     description: 'Tecnología para el procesamiento de alimentos, sistemas de riego y maquinaria agrícola.',
     icon: <Tractor className="h-10 w-10" />,
     image: 'https://i.imgur.com/AbtIOBT.jpeg'
+  }, {
+    title: 'Sector Alimenticio',
+    description: 'Equipos y soluciones para el procesamiento, empaque y conservación de alimentos y bebidas.',
+    icon: <Utensils className="h-10 w-10" />,
+    image: 'https://i.imgur.com/tYx8vkD.png'
   }, {
     title: 'Construcción',
     description: 'Equipos para obras civiles, bombeo de concreto y movimiento de tierras.',

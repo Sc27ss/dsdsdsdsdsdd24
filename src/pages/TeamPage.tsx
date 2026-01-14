@@ -1,6 +1,6 @@
 import React, { Children } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Briefcase } from 'lucide-react';
+import { Mail, Smartphone, Briefcase } from 'lucide-react';
 export function TeamPage() {
   const containerVariants = {
     hidden: {
@@ -89,7 +89,7 @@ export function TeamPage() {
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-24 h-24 rounded-xl overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
-                      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Diana Ma. Martínez Arias" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/6ylpPnD.png" alt="Diana Ma. Martínez Arias" className="w-full h-full object-cover" />
                     </div>
                   </div>
 
@@ -108,8 +108,8 @@ export function TeamPage() {
 
                     <div className="flex items-center gap-2 text-slate-400">
                       <Mail className="h-4 w-4 text-blue-400" />
-                      <a href="mailto:Soluciones_ind@une.net.co" className="text-sm hover:text-blue-400 transition-colors">
-                        Soluciones_ind@une.net.co
+                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Solusas.ind@gmail.com" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-blue-400 transition-colors">
+                        Solusas.ind@gmail.com
                       </a>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export function TeamPage() {
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-24 h-24 rounded-xl overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-600 shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform duration-300">
-                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ing. Ramiro Durán Zambrano" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/vIysGaR.png" alt="Ing. Ramiro Durán Zambrano" className="w-full h-full object-cover" />
                     </div>
                   </div>
 
@@ -145,9 +145,9 @@ export function TeamPage() {
                     </p>
 
                     <div className="flex items-center gap-2 text-slate-400 mb-2">
-                      <Phone className="h-4 w-4 text-blue-400" />
-                      <a href="tel:3207702522" className="text-sm hover:text-blue-400 transition-colors">
-                        320 770 2522
+                      <Smartphone className="h-4 w-4 text-blue-400" />
+                      <a href="https://wa.me/573207702522" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-blue-400 transition-colors">
+                        Cel. 320 770 2522
                       </a>
                     </div>
                   </div>

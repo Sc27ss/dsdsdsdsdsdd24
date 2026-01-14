@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-01-14",
+  "global": {
+    "title": "Soluciones Industriales de Antioquia S.A.S",
+    "description": "Suministro de equipos, repuestos y servicios para transmisión de potencia, bombas industriales, motores y manejo de fluidos. Soporte técnico y asesoría en Medellín.",
+    "keywords": [
+      "soluciones industriales",
+      "transmisión de potencia",
+      "bombas industriales",
+      "motores",
+      "manejo de fluidos",
+      "filtración de fluidos",
+      "construcción",
+      "agroindustria",
+      "servicios técnicos",
+      "soporte técnico",
+      "Medellín"
+    ]
+  },
+  "pages": {
+    "/": {
+      "title": "Inicio — Soluciones Industriales de Antioquia",
+      "description": "Impulsamos la productividad de su industria. Especialistas en transmisión de potencia, minería y manejo de fluidos. Integración de marcas con soporte técnico local en Medellín.",
+      "keywords": ["impulsamos la productividad","transmisión de potencia","minería","manejo de fluidos","Medellín"]
+    },
+    "/soluciones": {
+      "title": "Soluciones — Catálogo de Divisiones",
+      "description": "Catálogo de divisiones: Construcción, Manejo de Fluidos, Agroindustriales, Motores, Transmisión de Potencia y Filtración de Fluidos. Seleccione una categoría para ver especificaciones y productos.",
+      "keywords": ["construcción","manejo de fluidos","agroindustriales","motores","transmisión de potencia","filtración de fluidos"]
+    },
+    "/soluciones/construccion": {
+      "title": "Construcción — Equipos y Herramientas",
+      "description": "Equipos, repuestos y servicios para obras civiles e infraestructura. Maquinaria, generadores y herramientas para obras con soporte técnico especializado.",
+      "keywords": ["construcción","maquinaria para obras","generadores","vibrocompactadores","repuestos"]
+    },
+    "/soluciones/manejo-de-fluidos": {
+      "title": "Manejo de Fluidos — Sistemas y Bombas",
+      "description": "Sistemas completos para control, transporte y tratamiento de fluidos. Bombas industriales y soluciones de manejo de líquidos para procesos industriales.",
+      "keywords": ["manejo de fluidos","bombas industriales","tratamiento de fluidos","bombas"]
+    },
+    "/soluciones/agroindustriales": {
+      "title": "Agroindustriales — Tecnología y Equipos",
+      "description": "Equipos y soluciones diseñadas para la agroindustria moderna: riego, procesamiento y maquinaria agrícola.",
+      "keywords": ["agroindustria","maquinaria agrícola","procesamiento de alimentos","riego"]
+    },
+    "/soluciones/tras-potencia": {
+      "title": "Transmisión de Potencia — Componentes y Sistemas",
+      "description": "Componentes y sistemas para transmisión de potencia industrial: poleas, acoples y soluciones para optimizar equipos.",
+      "keywords": ["transmisión de potencia","poleas","acoples","componentes industriales"]
+    },
+    "/soluciones/filtracion-fluidos": {
+      "title": "Filtración de Fluidos — Separación y Filtrado",
+      "description": "Soluciones de filtración y separación para procesos industriales y tratamiento de fluidos.",
+      "keywords": ["filtración de fluidos","separación","tratamiento de fluidos"]
+    },
+    "/soluciones/motores": {
+      "title": "Motores — Equipos y Sistemas",
+      "description": "Motores y sistemas motrices para aplicaciones industriales y móviles. Servicios de mantenimiento y soporte técnico.",
+      "keywords": ["motores","motores eléctricos","mantenimiento de motores","servicio técnico"]
+    },
+    "/servicios": {
+      "title": "Servicios — Mantenimiento y Asesoría Técnica",
+      "description": "Comercialización de equipos, mantenimiento especializado, asesoría técnica, instalación y puesta en marcha, y soluciones a medida.",
+      "keywords": ["mantenimiento especializado","asesoría técnica","instalación y puesta en marcha","soluciones a medida"]
+    },
+    "/sectores": {
+      "title": "Sectores — Cobertura Industrial",
+      "description": "Atendemos industria manufacturera, minería, energía, agroindustria, sector alimenticio, construcción e infraestructura.",
+      "keywords": ["industria manufacturera","minería","energía","agroindustria","sector alimenticio","construcción"]
+    },
+    "/nosotros": {
+      "title": "Nosotros — Experiencia y Respaldo Técnico",
+      "description": "Empresa dedicada al suministro de equipos y servicios para los sectores industrial, energético y de construcción, con más de 15 años de experiencia.",
+      "keywords": ["empresa industrial","experiencia","respaldo técnico","portafolio integral"]
+    },
+    "/equipo": {
+      "title": "Equipo — Respaldo Técnico",
+      "description": "Equipo de profesionales y departamentos comerciales, técnicos y logísticos dedicados a soporte y atención al cliente.",
+      "keywords": ["equipo técnico","asesores técnicos","soporte","departamento logístico"]
+    },
+    "/contacto": {
+      "title": "Contacto — Solicite Asesoría y Cotización",
+      "description": "Póngase en contacto para recibir asesoría técnica, solicitar cotizaciones y coordinar soporte. Atención en Medellín.",
+      "keywords": ["contacto","cotización","asesoría técnica","Medellín"]
+    }
+  }
+}

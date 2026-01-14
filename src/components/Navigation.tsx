@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import { Menu, X, ChevronDown, Smartphone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/Button';
 import logo from '../assets/logos/logo.png';
@@ -20,45 +20,33 @@ export function Navigation() {
     setIsOpen(false);
     setSolutionsOpen(false);
   }, [location]);
-  const navLinks = [{
+    const navLinks = [{
     name: 'Inicio',
     path: '/'
   }, {
     name: 'Nosotros',
     path: '/nosotros'
-  }, {
+    }, {
     name: 'Soluciones',
     path: '/soluciones',
     dropdown: [{
-      name: 'Transmisión de Potencia',
-      path: '/soluciones/transmision-potencia'
-    }, {
-      name: 'Bombas Industriales',
-      path: '/soluciones/bombas-industriales'
-    }, {
-      name: 'Fabricación de Poleas',
-      path: '/soluciones/fabricacion-poleas'
-    }, {
-      name: 'Minería',
-      path: '/soluciones/mineria-equipos'
-    }, {
       name: 'Construcción',
       path: '/soluciones/construccion'
     }, {
-      name: 'Seguridad Industrial',
-      path: '/soluciones/seguridad-industrial'
+      name: 'Manejo de Fluidos',
+      path: '/soluciones/manejo-de-fluidos'
     }, {
-      name: 'Energía y Motores',
-      path: '/soluciones/energia-motores'
+      name: 'Agroindustriales',
+      path: '/soluciones/agroindustriales'
     }, {
-      name: 'Instrumentación',
-      path: '/soluciones/instrumentacion-valvulas'
+      name: 'Transmisión de Potencia',
+      path: '/soluciones/tras-potencia'
     }, {
-      name: 'Lubricación',
-      path: '/soluciones/lubricacion-combustibles'
+      name: 'Filtración de Fluidos',
+      path: '/soluciones/filtracion-fluidos'
     }, {
-      name: 'Equipos Complementarios',
-      path: '/soluciones/equipos-complementarios'
+      name: 'Motores',
+      path: '/soluciones/motores'
     }]
   }, {
     name: 'Servicios',
@@ -78,13 +66,12 @@ export function Navigation() {
       <div className="bg-slate-900 text-slate-300 py-2 px-4 hidden md:block border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <a href="tel:+576042389198" className="flex items-center hover:text-blue-400 transition-colors">
-              <Phone className="h-3 w-3 mr-2 text-blue-400" /> (604) 238 91 98
+            <a href="https://wa.me/573207702522" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-400 transition-colors">
+              <Smartphone className="h-3 w-3 mr-2 text-blue-400" /> Cel. 320 770 2522
             </a>
-            <span className="flex items-center">
-              <Mail className="h-3 w-3 mr-2 text-blue-400" />{' '}
-              Soluciones_ind@une.net.co
-            </span>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Solusas.ind@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-400 transition-colors">
+              <Mail className="h-3 w-3 mr-2 text-blue-400" /> Solusas.ind@gmail.com
+            </a>
           </div>
           <div className="text-slate-400">
             Cra 82C No. 30A – 105 Of. 218, Medellín

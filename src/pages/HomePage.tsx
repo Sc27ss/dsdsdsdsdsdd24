@@ -7,6 +7,7 @@ import { useCountUp } from '../hooks/useCountUp'
 import { SearchBar } from '../components/SearchBar'
 import { VideoSection } from '../components/VideoSection';
 import LogoCarousel from '../components/LogoCarousel';
+import { DivisionVideo } from '../components/DivisionVideo';
 import heroVideo from '../assets/videos/hero-background.mp4';
 
 function StatCard({
@@ -68,45 +69,30 @@ export function HomePage() {
   };
 
   const divisions = [{
-    name: 'Transmisión de Potencia',
-    icon: '⚙️',
-    path: '/soluciones/transmision-potencia'
-  }, {
-    name: 'Bombas Industriales',
-    icon: '💧',
-    path: '/soluciones/bombas-industriales'
-  }, {
-    name: 'Minería y Equipos',
-    icon: '⛏️',
-    path: '/soluciones/mineria-equipos'
-  }, {
     name: 'Construcción',
     icon: '🏗️',
     path: '/soluciones/construccion'
   }, {
-    name: 'Seguridad Industrial',
-    icon: '🦺',
-    path: '/soluciones/seguridad-industrial'
+    name: 'Manejo de Fluidos',
+    icon: '💧',
+    path: '/soluciones/manejo-de-fluidos'
+
   }, {
-    name: 'Energía y Motores',
-    icon: '⚡',
-    path: '/soluciones/energia-motores'
+    name: 'Agroindustriales',
+    icon: '🌾',
+    path: '/soluciones/agroindustriales'
   }, {
-    name: 'Fabricación de Poleas',
+    name: 'Transmisión de Potencia',
     icon: '⚙️',
-    path: '/soluciones/fabricacion-poleas'
+    path: '/soluciones/tras-potencia'
   }, {
-    name: 'Instrumentación y Válvulas',
-    icon: '📏',
-    path: '/soluciones/instrumentacion-valvulas'
+    name: 'Filtración de Fluidos',
+    icon: '🔬',
+    path: '/soluciones/filtracion-fluidos'
   }, {
-    name: 'Lubricación y Combustibles',
-    icon: '🛢️',
-    path: '/soluciones/lubricacion-combustibles'
-  }, {
-    name: 'Equipos Complementarios',
-    icon: '🌿',
-    path: '/soluciones/equipos-complementarios'
+    name: 'Motores',
+    icon: '⚡',
+    path: '/soluciones/motores'
   }];
   const containerVariants = {
     hidden: {
@@ -316,6 +302,9 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Inserted Division Video (Inicio) */}
+      <DivisionVideo videoName="video-seccion-inicio" />
 
       {/* Solutions Grid */}
       <section ref={solutionsRef} id="soluciones" className="py-20">

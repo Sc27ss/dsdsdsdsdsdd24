@@ -260,11 +260,11 @@ export function TermsModal({
                         </p>
                         <p>
                           <strong className="text-white">Email:</strong>{' '}
-                          Soluciones_ind@une.net.co
+                          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Solusas.ind@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">Solusas.ind@gmail.com</a>
                         </p>
                         <p>
-                          <strong className="text-white">Teléfono:</strong> (604)
-                          238 91 98
+                          <strong className="text-white">Celular:</strong>{' '}
+                          <a href="https://wa.me/573207702522" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">320 770 2522</a>
                         </p>
                         <p>
                           <strong className="text-white">Dirección:</strong> Cra
