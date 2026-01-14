@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'framer-motion';
-export function useCountUp(end: number, duration: number = 2000, suffix: string = '') {
+export function useCountUp(end: number, duration = 2000, suffix = '') {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
@@ -30,6 +30,7 @@ export function useCountUp(end: number, duration: number = 2000, suffix: string 
   }, [isInView, end, duration]);
   return {
     count,
-    ref
+    ref,
+    suffix
   };
 }

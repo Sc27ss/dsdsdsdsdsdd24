@@ -60,7 +60,9 @@ function VideoPlayer({ videoPath }: { videoPath: string }) {
           // pause when not visible and hide unmute control
           try {
             v.pause();
-          } catch (e) {}
+          } catch (e) {
+            // Ignore errors
+          }
           setShowUnmute(false);
           if (visibilityTimeout) {
             clearTimeout(visibilityTimeout);
@@ -85,7 +87,9 @@ function VideoPlayer({ videoPath }: { videoPath: string }) {
     try {
       v.muted = false;
       v.volume = 1;
-      v.play().catch(() => {});
+      v.play().catch(() => {
+        // Ignore play errors
+      });
     } finally {
       setShowUnmute(false);
     }
